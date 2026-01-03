@@ -1,0 +1,80 @@
+######################################
+# Python
+######################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+######################################
+# Virtual Environments
+######################################
+venv/
+.env/
+.env.*
+.venv/
+pip-wheel-metadata/
+
+######################################
+# Airflow Runtime Artifacts
+######################################
+output_files/
+airflow.db
+airflow-webserver.pid
+airflow-scheduler.pid
+
+# ######################################
+# # Airflow Local Config Overrides
+# ######################################
+# config/airflow.cfg
+
+######################################
+# Docker / Compose
+######################################
+*.log
+*.pid
+docker-compose.override.yml
+
+######################################
+# IDE / OS
+######################################
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+######################################
+# Testing / Coverage
+######################################
+.coverage
+htmlcov/
+pytest_cache/
+.tox/
+
+######################################
+# API Code Runtime Artifacts
+######################################
+api_code/__pycache__/
+api_code/*.log
+# api_code/.env
+api_code/.venv
+
+######################################
+# Airflow Source (Vendored / Clone)
+######################################
+source_code_airflow/
+
+######################################
+# Secrets
+######################################
+*.pem
+*.key
+*.crt
+*.secret
+*.secrets
