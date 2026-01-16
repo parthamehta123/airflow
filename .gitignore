@@ -32,7 +32,7 @@ airflow-scheduler.pid
 # ######################################
 # # Airflow Local Config Overrides
 # ######################################
-# config/airflow.cfg
+config/airflow.cfg
 
 ######################################
 # Docker / Compose
@@ -78,3 +78,8 @@ source_code_airflow/
 *.crt
 *.secret
 *.secrets
+
+######################################
+# Airflow Logs
+######################################
+logs/

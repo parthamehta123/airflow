@@ -2,7 +2,7 @@ from airflow.sdk import DAG
 from airflow.providers.standard.operators.bash import BashOperator
 from airflow.providers.standard.operators.python import PythonOperator
 
-dag = DAG(dag_id="myfirst_dag")
+dag = DAG(dag_id="MyFirstDAG")
 
 def print_context(**kwargs):
     print(kwargs)
@@ -11,7 +11,7 @@ def print_context(**kwargs):
 copy_file = BashOperator(
     dag=dag,
     task_id="copy_file",
-    bash_command="echo copying file"
+    bash_command="echo copying file from one location to another location"
 )
 
 task2 = PythonOperator(
