@@ -6,8 +6,7 @@ from datetime import datetime
 dag = DAG(
     dag_id="MyFirstDAG",
     start_date=datetime(2026, 1, 18),
-    schedule="*/2 * * * *",  # every 2 minutes,
-    catchup=True,
+    schedule_interval="*/2 * * * *",  # every 2 minutes
 )
 
 
