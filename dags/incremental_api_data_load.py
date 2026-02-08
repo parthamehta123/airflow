@@ -50,6 +50,7 @@ pull_api_data = PythonOperator(
     #     "http://fastapi-app:5000/getAll",
     #     f"/opt/airflow/output_files/dag_result_{{ds}}.json",
     # ],
+    # op_kwargs={},
     templates_dict={
         "output_path": "/opt/airflow/output_files/dag_result_{{ ds }}.json",
         "url": "http://fastapi-app:5000/getAll",
